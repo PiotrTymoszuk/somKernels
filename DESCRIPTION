@@ -1,0 +1,19 @@
+Package: somKernels
+Type: Package
+Title: Additional distance pointers for the kohonen package
+Version: 0.1.0
+Maintainer: Piotr Tymoszuk <piotr.s.tymoszuk@gmail.com>
+Description: Rcpp pointers for calculation of additional distances by the 
+    kohonen package tools.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    kohonen,
+    Rcpp (>= 1.0.7)
+LinkingTo: Rcpp
+RoxygenNote: 7.1.1
+Authors@R: 
+    person("Piotr", "Tymoszuk", , "piotr.s.tymoszuk@gmail.com", 
+    role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0002-0398-6034"))
