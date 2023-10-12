@@ -11,6 +11,16 @@ Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
 Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
+// additive_symm
+Rcpp::XPtr<DistanceFunctionPtr> additive_symm();
+RcppExport SEXP _somKernels_additive_symm() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(additive_symm());
+    return rcpp_result_gen;
+END_RCPP
+}
 // BrayCurtis
 Rcpp::XPtr<DistanceFunctionPtr> BrayCurtis();
 RcppExport SEXP _somKernels_BrayCurtis() {
@@ -18,6 +28,46 @@ BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     rcpp_result_gen = Rcpp::wrap(BrayCurtis());
+    return rcpp_result_gen;
+END_RCPP
+}
+// bhattacharyya
+Rcpp::XPtr<DistanceFunctionPtr> bhattacharyya();
+RcppExport SEXP _somKernels_bhattacharyya() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(bhattacharyya());
+    return rcpp_result_gen;
+END_RCPP
+}
+// canberra
+Rcpp::XPtr<DistanceFunctionPtr> canberra();
+RcppExport SEXP _somKernels_canberra() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(canberra());
+    return rcpp_result_gen;
+END_RCPP
+}
+// chebyshev
+Rcpp::XPtr<DistanceFunctionPtr> chebyshev();
+RcppExport SEXP _somKernels_chebyshev() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(chebyshev());
+    return rcpp_result_gen;
+END_RCPP
+}
+// clark
+Rcpp::XPtr<DistanceFunctionPtr> clark();
+RcppExport SEXP _somKernels_clark() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(clark());
     return rcpp_result_gen;
 END_RCPP
 }
@@ -31,6 +81,16 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// czekanowski
+Rcpp::XPtr<DistanceFunctionPtr> czekanowski();
+RcppExport SEXP _somKernels_czekanowski() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(czekanowski());
+    return rcpp_result_gen;
+END_RCPP
+}
 // dice
 Rcpp::XPtr<DistanceFunctionPtr> dice();
 RcppExport SEXP _somKernels_dice() {
@@ -38,6 +98,76 @@ BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     rcpp_result_gen = Rcpp::wrap(dice());
+    return rcpp_result_gen;
+END_RCPP
+}
+// divergence
+Rcpp::XPtr<DistanceFunctionPtr> divergence();
+RcppExport SEXP _somKernels_divergence() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(divergence());
+    return rcpp_result_gen;
+END_RCPP
+}
+// fidelity
+Rcpp::XPtr<DistanceFunctionPtr> fidelity();
+RcppExport SEXP _somKernels_fidelity() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(fidelity());
+    return rcpp_result_gen;
+END_RCPP
+}
+// harmonic_mean
+Rcpp::XPtr<DistanceFunctionPtr> harmonic_mean();
+RcppExport SEXP _somKernels_harmonic_mean() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(harmonic_mean());
+    return rcpp_result_gen;
+END_RCPP
+}
+// hassebrook
+Rcpp::XPtr<DistanceFunctionPtr> hassebrook();
+RcppExport SEXP _somKernels_hassebrook() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(hassebrook());
+    return rcpp_result_gen;
+END_RCPP
+}
+// hellinger
+Rcpp::XPtr<DistanceFunctionPtr> hellinger();
+RcppExport SEXP _somKernels_hellinger() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(hellinger());
+    return rcpp_result_gen;
+END_RCPP
+}
+// inner_product
+Rcpp::XPtr<DistanceFunctionPtr> inner_product();
+RcppExport SEXP _somKernels_inner_product() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(inner_product());
+    return rcpp_result_gen;
+END_RCPP
+}
+// intersection
+Rcpp::XPtr<DistanceFunctionPtr> intersection();
+RcppExport SEXP _somKernels_intersection() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(intersection());
     return rcpp_result_gen;
 END_RCPP
 }
@@ -51,6 +181,116 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// jeffreys
+Rcpp::XPtr<DistanceFunctionPtr> jeffreys();
+RcppExport SEXP _somKernels_jeffreys() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(jeffreys());
+    return rcpp_result_gen;
+END_RCPP
+}
+// jensen_difference
+Rcpp::XPtr<DistanceFunctionPtr> jensen_difference();
+RcppExport SEXP _somKernels_jensen_difference() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(jensen_difference());
+    return rcpp_result_gen;
+END_RCPP
+}
+// k_divergence
+Rcpp::XPtr<DistanceFunctionPtr> k_divergence();
+RcppExport SEXP _somKernels_k_divergence() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(k_divergence());
+    return rcpp_result_gen;
+END_RCPP
+}
+// kulczynski_d
+Rcpp::XPtr<DistanceFunctionPtr> kulczynski_d();
+RcppExport SEXP _somKernels_kulczynski_d() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(kulczynski_d());
+    return rcpp_result_gen;
+END_RCPP
+}
+// lorentzian
+Rcpp::XPtr<DistanceFunctionPtr> lorentzian();
+RcppExport SEXP _somKernels_lorentzian() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(lorentzian());
+    return rcpp_result_gen;
+END_RCPP
+}
+// matusita
+Rcpp::XPtr<DistanceFunctionPtr> matusita();
+RcppExport SEXP _somKernels_matusita() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(matusita());
+    return rcpp_result_gen;
+END_RCPP
+}
+// motyka
+Rcpp::XPtr<DistanceFunctionPtr> motyka();
+RcppExport SEXP _somKernels_motyka() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(motyka());
+    return rcpp_result_gen;
+END_RCPP
+}
+// neyman
+Rcpp::XPtr<DistanceFunctionPtr> neyman();
+RcppExport SEXP _somKernels_neyman() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(neyman());
+    return rcpp_result_gen;
+END_RCPP
+}
+// pearson
+Rcpp::XPtr<DistanceFunctionPtr> pearson();
+RcppExport SEXP _somKernels_pearson() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(pearson());
+    return rcpp_result_gen;
+END_RCPP
+}
+// prob_symm
+Rcpp::XPtr<DistanceFunctionPtr> prob_symm();
+RcppExport SEXP _somKernels_prob_symm() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(prob_symm());
+    return rcpp_result_gen;
+END_RCPP
+}
+// ruzicka
+Rcpp::XPtr<DistanceFunctionPtr> ruzicka();
+RcppExport SEXP _somKernels_ruzicka() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(ruzicka());
+    return rcpp_result_gen;
+END_RCPP
+}
 // smc
 Rcpp::XPtr<DistanceFunctionPtr> smc();
 RcppExport SEXP _somKernels_smc() {
@@ -61,13 +301,114 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// soergel
+Rcpp::XPtr<DistanceFunctionPtr> soergel();
+RcppExport SEXP _somKernels_soergel() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(soergel());
+    return rcpp_result_gen;
+END_RCPP
+}
+// squared_chi
+Rcpp::XPtr<DistanceFunctionPtr> squared_chi();
+RcppExport SEXP _somKernels_squared_chi() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(squared_chi());
+    return rcpp_result_gen;
+END_RCPP
+}
+// squared_chord
+Rcpp::XPtr<DistanceFunctionPtr> squared_chord();
+RcppExport SEXP _somKernels_squared_chord() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(squared_chord());
+    return rcpp_result_gen;
+END_RCPP
+}
+// squared_euclidean
+Rcpp::XPtr<DistanceFunctionPtr> squared_euclidean();
+RcppExport SEXP _somKernels_squared_euclidean() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(squared_euclidean());
+    return rcpp_result_gen;
+END_RCPP
+}
+// taneja
+Rcpp::XPtr<DistanceFunctionPtr> taneja();
+RcppExport SEXP _somKernels_taneja() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(taneja());
+    return rcpp_result_gen;
+END_RCPP
+}
+// topsoe
+Rcpp::XPtr<DistanceFunctionPtr> topsoe();
+RcppExport SEXP _somKernels_topsoe() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(topsoe());
+    return rcpp_result_gen;
+END_RCPP
+}
+// wavehedges
+Rcpp::XPtr<DistanceFunctionPtr> wavehedges();
+RcppExport SEXP _somKernels_wavehedges() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(wavehedges());
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
+    {"_somKernels_additive_symm", (DL_FUNC) &_somKernels_additive_symm, 0},
     {"_somKernels_BrayCurtis", (DL_FUNC) &_somKernels_BrayCurtis, 0},
+    {"_somKernels_bhattacharyya", (DL_FUNC) &_somKernels_bhattacharyya, 0},
+    {"_somKernels_canberra", (DL_FUNC) &_somKernels_canberra, 0},
+    {"_somKernels_chebyshev", (DL_FUNC) &_somKernels_chebyshev, 0},
+    {"_somKernels_clark", (DL_FUNC) &_somKernels_clark, 0},
     {"_somKernels_cosine", (DL_FUNC) &_somKernels_cosine, 0},
+    {"_somKernels_czekanowski", (DL_FUNC) &_somKernels_czekanowski, 0},
     {"_somKernels_dice", (DL_FUNC) &_somKernels_dice, 0},
+    {"_somKernels_divergence", (DL_FUNC) &_somKernels_divergence, 0},
+    {"_somKernels_fidelity", (DL_FUNC) &_somKernels_fidelity, 0},
+    {"_somKernels_harmonic_mean", (DL_FUNC) &_somKernels_harmonic_mean, 0},
+    {"_somKernels_hassebrook", (DL_FUNC) &_somKernels_hassebrook, 0},
+    {"_somKernels_hellinger", (DL_FUNC) &_somKernels_hellinger, 0},
+    {"_somKernels_inner_product", (DL_FUNC) &_somKernels_inner_product, 0},
+    {"_somKernels_intersection", (DL_FUNC) &_somKernels_intersection, 0},
     {"_somKernels_jaccard", (DL_FUNC) &_somKernels_jaccard, 0},
+    {"_somKernels_jeffreys", (DL_FUNC) &_somKernels_jeffreys, 0},
+    {"_somKernels_jensen_difference", (DL_FUNC) &_somKernels_jensen_difference, 0},
+    {"_somKernels_k_divergence", (DL_FUNC) &_somKernels_k_divergence, 0},
+    {"_somKernels_kulczynski_d", (DL_FUNC) &_somKernels_kulczynski_d, 0},
+    {"_somKernels_lorentzian", (DL_FUNC) &_somKernels_lorentzian, 0},
+    {"_somKernels_matusita", (DL_FUNC) &_somKernels_matusita, 0},
+    {"_somKernels_motyka", (DL_FUNC) &_somKernels_motyka, 0},
+    {"_somKernels_neyman", (DL_FUNC) &_somKernels_neyman, 0},
+    {"_somKernels_pearson", (DL_FUNC) &_somKernels_pearson, 0},
+    {"_somKernels_prob_symm", (DL_FUNC) &_somKernels_prob_symm, 0},
+    {"_somKernels_ruzicka", (DL_FUNC) &_somKernels_ruzicka, 0},
     {"_somKernels_smc", (DL_FUNC) &_somKernels_smc, 0},
+    {"_somKernels_soergel", (DL_FUNC) &_somKernels_soergel, 0},
+    {"_somKernels_squared_chi", (DL_FUNC) &_somKernels_squared_chi, 0},
+    {"_somKernels_squared_chord", (DL_FUNC) &_somKernels_squared_chord, 0},
+    {"_somKernels_squared_euclidean", (DL_FUNC) &_somKernels_squared_euclidean, 0},
+    {"_somKernels_taneja", (DL_FUNC) &_somKernels_taneja, 0},
+    {"_somKernels_topsoe", (DL_FUNC) &_somKernels_topsoe, 0},
+    {"_somKernels_wavehedges", (DL_FUNC) &_somKernels_wavehedges, 0},
     {NULL, NULL, 0}
 };
 
